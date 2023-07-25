@@ -1,0 +1,37 @@
+1. Why abstraction?
+   
+   Imagine you are building a car manufacturing system. 
+   Implementing a car(or any real world entity) is complex.
+   Why it is complex? Because a car have multiple components, so manufacturing a car means you need to manufacture and engine, framework, interior and many many more things.
+   If we go on to implement this car, without abstraction, then it will be quite overwhelming and unmangeable.
+   In such scenarios we use abstraction.
+
+2. What purpose does it solve?
+   
+   1. In the car manufacturing system, you can use abstraction to break down the system into manageable, self contained(having all that it needs) modules.
+      for.e.g. Engine, Framework, Interior, etc.
+   2. Each module now contains only the essential characteristics/specific functionality and hiding the unnecessary details in abstract classes.
+   3. In one line we can say, it used to provide a blueprint for a class(class is a blueprint for object and abstract class is a blueprint of another class)
+   4. Provides clear seperation between design and implementation
+   5. Different implementation of the same abstraction are possible, for example a car abstract class can be implemented differently in say an suv car or a bmw car.
+   6. Reduces code duplicaton, you don't have to write braking system in suv and bmw seperately, it will be same for both.
+
+3. Keywords
+   flexibility, extensibility, easier maintenance and updates, reusability,simplifying complexity
+
+4. Important points about abstract class in java
+   
+   1. abstract class are declared using the abstract keyword.
+   2. you cannot create objects of abstract class(why would you they are only for design)
+   3. abstract class can have abstract methods(methods without a body) and concrete methods(methods with a body).
+   4. abstract methods are meant to be implemented by subclasses while concrete methods can be inherited.
+   5. abstract method cannot exist without class being abstract.
+   6. abstract classes can have instance variables, static methods, instance methods, and constructors just like normal class.
+   7. subclass must implement abstract methods or be declared as abstract themseleves.
+   8. subclass uses extends keyword to extend an abstract class.
+   9. a subclass can extend only one abstract class(java doesn't support multiple inheritance)
+  10. abstract class constructors are called using super keyword from parent class and used to initialize common instance variables.
+  11. abstract class hides the implementation details from subclasses so subclasses can focus on their functionality.
+  12. you cannot declare an abstract class final(they both contradict final means you cannot extend abstract means you must extend)
+
+   
